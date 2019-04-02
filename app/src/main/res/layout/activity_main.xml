@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.societe.anonyme.clockapp.MainActivity">
+
+    <TextView
+        android:id="@+id/hourstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours: "
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/hoursinput"
+        android:layout_toRightOf="@id/hourstext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/minutetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minutes: "
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/hourstext"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/minuteinput"
+        android:layout_toRightOf="@id/hourstext"
+        android:layout_below="@id/hoursinput"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/B_Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:onClick="StartService"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="90dp"/>
+
+    <Button
+        android:id="@+id/B_Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:onClick="StopService"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/B_Start"/>
+
+
+</RelativeLayout>
